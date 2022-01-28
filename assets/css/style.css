@@ -1180,7 +1180,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 15px;
         font-weight: 400;
         color: #888888;
-        line-height: 1.2; }
+        line-height: 1.2;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        .footer-menu__contact a:hover {
+          color: #d69944; }
       .footer-menu__contact-icon {
         display: inline-block;
         width: 24px;
