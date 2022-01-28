@@ -914,9 +914,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     opacity: 1; }
   .application__form input:focus {
-    border-color: #ad7b34;
-    -webkit-box-shadow: 13px 10px 35px 0px rgba(181, 129, 55, 0.8);
-    box-shadow: 13px 10px 35px 0px rgba(181, 129, 55, 0.8); }
+    border-color: #ad7b34; }
 
 .application__form button {
   border-radius: 4px;
