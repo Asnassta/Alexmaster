@@ -108,6 +108,30 @@ $(document).ready(function() {
   });
   /*=============/slider-reviews==============*/
 
+  /*======Slider-design=============*/
+  $('.design__slider').slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      variableWidth: true,
+      prevArrow: $('.design__arrow_prev'),
+      nextArrow: $('.design__arrow_next'),
+      responsive: [
+    {
+      breakpoint: 415,
+      settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: false,
+        prevArrow: $('.design__arrow_prev'),
+        nextArrow: $('.design__arrow_next'),
+      }
+    },
+  ]
+  });
+  /*=============/slider-design==============*/
+
 
 	
 });

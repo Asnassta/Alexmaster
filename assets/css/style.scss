@@ -1,5 +1,6 @@
 @import 'fonts.scss';
 @import 'variables.scss';
+@import 'franchisees.scss';
 
 /*Reset
 ===============*/
@@ -273,6 +274,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			font-weight: 300;
 			color: $bl;
 			line-height: 1.2;
+		}
+		&_main {
+			span {
+				font-weight: 500;
+			}
 		}
 	}
 	&__shopbag {
@@ -859,6 +865,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	&__slide {
 		width: calc(33.33333% - 40px);
 		margin-left: 40px;
+		img {
+			max-width: 100%;
+		}
 	}
 	.slick-list {
 		overflow: visible;
@@ -951,6 +960,49 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	}
 }
 /*===========/advantages=======*/
+
+/*=============Preeminence============*/
+.preeminence {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -70px;
+		margin-bottom: -30px;
+		>* {
+			width: calc(33.33333% - 70px);
+			margin-left: 65px;
+			margin-bottom: 30px;
+		}
+	}
+	&__item {
+		display: flex;
+	}
+	&__icon {
+		width: 34px;
+		flex: 0 0 34px;
+		margin-right: 18px;
+		margin-top: 7px;
+	}
+	&__title {
+		font-family: $ff;
+		font-size: 20px;
+		font-weight: 500;
+		color: $orange;
+		line-height: 1.2;
+		margin-bottom: 20px;
+		@media(min-width: 766px) {
+			max-width: 155px;
+		}
+	}
+	&__text {
+		font-family: $ff;
+		font-size: 18px;
+		font-weight: 400;
+		color: $bl;
+		line-height: 1.2;
+	}
+}
+/*=============/preeminence============*/
 
 /*============Footer==========*/
 .footer {
@@ -1343,6 +1395,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 				}
 			}
 		}
+		&__shopbag {
+			margin-right: 5px;
+		}
 	}
 	.catalog-drop {
 		.catalog-box {
@@ -1420,6 +1475,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 		&__text {
 			font-size: 15px;
 			margin-top: 20px;
+		}
+	}
+	.preeminence {
+		&__inner {
+			margin-left: -40px;
+			>* {
+				margin-left: 40px;
+				width: calc(33.33333% - 40px);
+			}
+		}
+		&__title {
+			font-size: 18px;
+			margin-bottom: 15px;
+		}
+		&__text {
+			font-size: 16px;
 		}
 	}
 }
@@ -1613,6 +1684,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			display: none;
 		}
 	}
+	.btn-orange {
+		font-size: 13px;
+		padding: 15px 20px;
+	}
 	.intro {
 		&__slide {
 			padding-top: 50px;
@@ -1740,6 +1815,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 			}
 		}
 	}
+	.preeminence {
+		&__inner {
+			margin-left: 0;
+			>* {
+				margin-left: 0;
+				width: 100%;
+			}
+		}
+		&__icon {
+			margin-top: 0;
+		}
+	}
 }
 
 @media(max-width: 414px) {
@@ -1760,5 +1847,29 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 				}
 			}
 		}
+	}
+	.preeminence {
+		&__title {
+			font-size: 16px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media(max-width: 360px) {
+	.header {
+		&__logo {
+			margin-right: 15px;
+		}
+	}
+	.menu {
+		&__col {
+			padding: 0 5px;
+		}
+	}
+	.burger {
+		margin-right: 10px;
 	}
 }
